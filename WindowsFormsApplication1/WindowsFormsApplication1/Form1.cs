@@ -157,7 +157,7 @@ namespace WindowsFormsApplication1
                             + "from borrower, loan where borrower.loan_number = loan.loan_number";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        coluomnName = "";
+                        oluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
                         separatingline = "";
@@ -947,6 +947,99 @@ namespace WindowsFormsApplication1
                     break;
                 case 3:
                     this.PSTR.Text = "3. 중복되지 않은 모든 지점들의 이름을 구하라 (distinct)";
+                    break;
+                case 4:
+                    this.PSTR.Text = "4. Perryridge 지점에서 $1200 이상의 대출 총액을 지닌 모든 대출에 대해 대출 번호를 전부 구하라. (select)";
+                    break;
+                case 5:
+                    this.PSTR.Text = "5. 은행에 대출을 가지고 있는 모든 고객들에 대해 그들의 이름과 대출번호와 대출 총액을 구하라. (select)";
+                    break;
+                case 6:
+                    this.PSTR.Text = "6. Perryridge 지점의 모든 대출에 대해여 고객의 이름과 대출 번호, 대출 총액을 구하라.";
+                    break;
+                case 7:
+                    this.PSTR.Text = "7. 이름에 'Main'이라는 부분 문자열이 포함된 거리에 살고 있는 모든 고객들의 이름을 구하여라.(like)";
+                    break;
+                case 8:
+                    this.PSTR.Text = "8. Perryridge 지점의 대출을 가진 모든 고객들을 알파벳 순서로 나열하라. (order by)";
+                    break;
+                case 9:
+                    this.PSTR.Text = "9. 은행에서 대출, 계좌 혹은 둘 다를 가진 모든 고객을 나열하라. (union)";
+                    break;
+                case 10:
+                    this.PSTR.Text = "10. 은행에 대출과 계좌 모두를 가진 모든 고객을 나열하라. (intersect)";
+                    break;
+                case 11:
+                    this.PSTR.Text = "11. 대출 총액이 가장 큰 고객의 이름과 대출 총액을 구하여라. (max)";
+                    break;
+                case 12:
+                    this.PSTR.Text = "12. Harrison과 Woodside에 살지 않으면서 계좌에 잔고가 500이상 있는 고객의 이름과 고객이 사는 도시를 구하라. (select)";
+                    break;
+                case 13:
+                    this.PSTR.Text = "13. 은행에 계좌는 가지고 있지만 대출은 가지고 있지 않은 모든 고객들을 나열하라. (minus)";
+                    break;
+                case 14:
+                    this.PSTR.Text = "14. Perryridge 지점에서 계좌의 평균 잔고를 구하여라. (avg)";
+                    break;
+                case 15:
+                    this.PSTR.Text = "15. 각 지점의 평균 계좌 잔고를 구하라. (avg, group by)";
+                    break;
+                case 16:
+                    this.PSTR.Text = "16. 각 지점의 예금자들의 수를 구하라. (count, group by)";
+                    break;
+                case 17:
+                    this.PSTR.Text = "17. 평균 잔고가 $800 이상인 지점 이름과 평균 잔고를 나열하라. (avg, group by, having)";
+                    break;
+                case 18:
+                    this.PSTR.Text = "18. 모든 계좌의 평균 잔고를 구하라. (avg)";
+                    break;
+                case 19:
+                    this.PSTR.Text = "19. Palo Alto에 살고 최소한 두 개의 계좌를 가진 각각의 고객들의 이름과 평균 잔고를 구하라.(group by, having)";
+                    break;
+                case 20:
+                    this.PSTR.Text = "20. 같은 도시에 사는 고객의 이름의 쌍을 구하여라. (select)";
+                    break;
+                case 21:
+                    this.PSTR.Text = "21. 각 도시 별로 가장 높은 대출 총액을 가지고 있는 고객의 이름과 대출 총액을 구하여라. 단, 대출을 가진 고객이 살지 않는 도시는 표시하지 않는다. (max, group by)";
+                    break;
+                case 22:
+                    this.PSTR.Text = "22. Horseneck에 있는 각 지점보다 큰 자산 값을 갖는 모든 지점들의 이름을 나열하라. (all)";
+                    break;
+                case 23:
+                    this.PSTR.Text = "23. 가장 높은 평균 잔고를 가진 지점을 구하라. (group by, having, all)";
+                    break;
+                case 24:
+                    this.PSTR.Text = "24. 지점 이름과 그 지점에 계좌나 대출 둘 중 하나를 가진 고객 이름으로 구성된 View를 작성하라.단 View의 이름은 all_customer이다. (create view)";
+                    break;
+                case 25:
+                    this.PSTR.Text = "25. 24에서 생성된 View를 이용하여 Perryridge 지점의 모든 고객 이름을 나열하라.";
+                    break;
+                case 26:
+                    this.PSTR.Text = "26. 각 지점에서 총 잔고의 최대값을 나열하라. (as)";
+                    break;
+                case 27:
+                    this.PSTR.Text = "27. 모든 지점의 총 계좌 예금의 평균보다 많은 총 계좌 예금을 갖는 모든 지점을 나열하라. (group by, avg, as)";
+                    break;
+                case 28:
+                    this.PSTR.Text = "28. 고객의 계좌 중 balance가 가장 높은 계좌와 가장 작은 계좌를 구하라. (max, min)";
+                    break;
+                case 29:
+                    this.PSTR.Text = "29. 대출 액을 범위로 표현하라. (trunc, decode)";
+                    break;
+                case 30:
+                    this.PSTR.Text = "30. 고객에 대한 정보를 한 칼럼 안에 보기 쉽게 구하라 (concat)";
+                    break;
+                case 31:
+                    this.PSTR.Text = "31. 평균 대출 총액보다 적은 대출 총액을 가지고 있는 고객의 이름과 대출 총액을 구하라 (avg)";
+                    break;
+                case 32:
+                    this.PSTR.Text = "32. 대출 총액이 $1300과 $1500 사이인 모든 대출을 삭제하라. (delete, between)";
+                    break;
+                case 33:
+                    this.PSTR.Text = "33. 평균 잔고보다 많은 잔고를 가진 계좌에 대해 5%의 이자를 지급하라. (update)";
+                    break;
+                case 34:
+                    this.PSTR.Text = "34. $10000 이상의 잔고를 자진 모든 계좌에 대해서는 6%의 이자를 지급하고 그 외의 잔고를 가진 모든 계좌에 대해서는 5 % 의 이자를 지급하라. (update, case)";
                     break;
                 case 35:
                     this.PSTR.Text = "35. 지금가지 생성된 View와 릴레이션을 삭제하라 (drop)";
