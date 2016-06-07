@@ -135,13 +135,13 @@ namespace WindowsFormsApplication1
                             + "AND branch_name = 'Perryridge'";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -157,13 +157,13 @@ namespace WindowsFormsApplication1
                             + "from borrower, loan where borrower.loan_number = loan.loan_number";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -180,13 +180,13 @@ namespace WindowsFormsApplication1
                     + "AND loan.branch_name = 'Perryridge'";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -201,13 +201,13 @@ namespace WindowsFormsApplication1
                         cmd.CommandText = "select customer_name from customer where customer_street like '%Main%'";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -224,13 +224,13 @@ namespace WindowsFormsApplication1
                             + "AND loan.branch_name = 'Perryridge' order by borrower.customer_name ASC";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -249,13 +249,13 @@ namespace WindowsFormsApplication1
                                 + "from depositor";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -274,13 +274,13 @@ namespace WindowsFormsApplication1
                             + "from depositor";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -304,13 +304,13 @@ namespace WindowsFormsApplication1
                                         + "group by customer_name))";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -331,13 +331,13 @@ namespace WindowsFormsApplication1
                             + "AND account.account_number = depositor.account_number";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -356,13 +356,13 @@ namespace WindowsFormsApplication1
                             + "from borrower";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -379,13 +379,13 @@ namespace WindowsFormsApplication1
                             + "where branch_name = 'Perryridge'";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -402,13 +402,13 @@ namespace WindowsFormsApplication1
                             + "group by branch_name";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -425,13 +425,13 @@ namespace WindowsFormsApplication1
                             + "group by branch_name";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -449,13 +449,13 @@ namespace WindowsFormsApplication1
                             + "having avg(balance) >= 800";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -471,13 +471,13 @@ namespace WindowsFormsApplication1
                              + "from account ";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -499,13 +499,13 @@ namespace WindowsFormsApplication1
                             + "having count(BALANCE) >= 2";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -523,13 +523,13 @@ namespace WindowsFormsApplication1
                             + "AND CUSTOMER1.customer_name > CUSTOMER2.customer_name";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -557,13 +557,13 @@ namespace WindowsFormsApplication1
                                 + "group by customer.customer_city)";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -582,13 +582,13 @@ namespace WindowsFormsApplication1
                                                 + "where branch_city = 'Horseneck')";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -608,13 +608,13 @@ namespace WindowsFormsApplication1
                                                         + "group by branch_name )";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -636,13 +636,13 @@ namespace WindowsFormsApplication1
                             + "where loan.loan_number = borrower.loan_number)";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -659,13 +659,13 @@ namespace WindowsFormsApplication1
                             + "where branch_name = 'Perryridge'";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -682,13 +682,13 @@ namespace WindowsFormsApplication1
                             + "group by branch_name";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -710,13 +710,13 @@ namespace WindowsFormsApplication1
                                                     + "group by branch_name))";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -736,13 +736,13 @@ namespace WindowsFormsApplication1
                             + "AND account.balance = (select min(balance) from account))";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -760,13 +760,13 @@ namespace WindowsFormsApplication1
                                                                                     + "from loan";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -782,13 +782,13 @@ namespace WindowsFormsApplication1
                             + "from customer";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -814,13 +814,13 @@ namespace WindowsFormsApplication1
                                                             + "group by customer_name )) ";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -839,13 +839,13 @@ namespace WindowsFormsApplication1
                         cmd.CommandText = "select * from loan";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -865,13 +865,13 @@ namespace WindowsFormsApplication1
                         cmd.CommandText = "select * from account";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
@@ -895,13 +895,13 @@ namespace WindowsFormsApplication1
                         cmd.CommandText = "select * from account";
                         this.SQLTEXT.Text = cmd.CommandText;
                         dr = cmd.ExecuteReader();
-                        string coluomnName = "";
+                        coluomnName = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             coluomnName += "\t" + dr.GetName(i);
-                        string separatingline = "";
+                        separatingline = "";
                         for (int i = 0; i < dr.FieldCount; i++)
                             separatingline += "\t" + "===========";
-                        string rowText = "";
+                        rowText = "";
                         while (dr.Read())
                         {
                             for (int i = 0; i < dr.FieldCount; i++)
